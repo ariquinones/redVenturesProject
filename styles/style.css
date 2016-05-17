@@ -1,0 +1,76 @@
+body {
+	background: rgba(233,233,233,1);
+	font-family: verdana;
+	font-size: .8em;
+}
+#container {
+	position: fixed;
+	top: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 30%;
+}
+.dropDownTitle {
+	background: rgb(43,46,50);
+	padding: 2%;
+	text-indent: 1%;
+	color: rgba(255,255,255,.7);
+	border-radius: 3px;
+	z-index: 20;
+	position: absolute;
+	width: 100%;
+}
+input {
+	position: absolute;
+	right: 0;
+	width: 30%;
+	opacity: 0;
+	z-index: 10;
+}
+input:hover {
+	cursor: pointer;
+}
+.dropDownArrow {
+	width: 1em;
+	height: 1em;
+	position: absolute;
+	opacity: .7;
+	right: 5%;
+	transition: ease .5s;
+}
+input[type='checkbox']:checked ~ .dropDownArrow {
+	transform: rotate(90deg);
+}
+.languagesContainer {
+	visibility: hidden;
+	opacity: 0;
+ 	position: absolute;
+ 	top: -200px;
+ 	float: left;
+ 	z-index: 1;
+ 	transition:0.8s ease-in-out;
+ 	-moz-transition:0.8s ease-in-out;
+	-o-transition:0.8s ease-in-out;
+	-webkit-transition:all 0.8s ease-in-out;
+ 	background: rgba(255,255,255,.9);
+	border-radius: 3px;
+	box-shadow: 2px 5px 15px rgba(0,0,0,.2);
+	-moz-box-shadow: 2px 5px 15px rgba(0,0,0,.2);
+	-webkit-box-shadow: 2px 5px 15px rgba(0,0,0,.2);
+	width: 100%;
+	padding: 2%;
+}
+.individualLanguage {
+	padding: 3% 5%;
+	color: rgba(43, 46, 50, 0.6);
+}
+.individualLanguage:hover {
+	background: rgba(60,171,239,1);
+	cursor: pointer;
+	color: white;
+}
+.check {
+	width: 1em;
+	height: 1em;
+	float: right;
+}
