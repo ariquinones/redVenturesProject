@@ -69,8 +69,6 @@ input[type='checkbox']:checked ~ .dropDownArrow {
 	cursor: pointer;
 	color: white;
 }
-
-
 .flagIcon {
 		height: .75em;
 		width: 1em;
@@ -88,7 +86,7 @@ input[type='checkbox']:checked ~ .dropDownArrow {
 	#container {
 		width: 80%;
 	}
-	.individualLanguage:focus {
+	.individualLanguage:active {
 	background: rgba(60,171,239,1);
 	color: white;
 	}
@@ -101,7 +99,7 @@ input[type='checkbox']:checked ~ .dropDownArrow {
 	#container {
 		width: 80%;
 	}
-	.individualLanguage:focus {
+	.individualLanguage:active {
 	background: rgba(60,171,239,1);
 	color: white;
 }
